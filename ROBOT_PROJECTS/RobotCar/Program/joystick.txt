@@ -1,0 +1,66 @@
+#--------------------
+:START
+if(KEY=KEY_R1){
+  rmo(pivotR)
+}else if(KEY=KEY_L1){
+  rmo(pivotL)
+}else if(KEY=KEY_R2+KEY_UP){
+  rmo(forward0)
+}else if(KEY=KEY_R2+KEY_DN){
+  rmo(back0)
+}else if(KEY=KEY_R2+KEY_LEFT){
+  #No data
+}else if(KEY=KEY_R2+KEY_RIGHT){
+  #No data
+}else if(KEY=KEY_R2+KEY_A){
+  #No data
+}else if(KEY=KEY_R2+KEY_B){
+  rmo(up4)
+}else if(KEY=KEY_R2+KEY_C){
+  rmo(up3)
+}else if(KEY=KEY_R2+KEY_D){
+  #No data
+}else if(KEY=KEY_R2+KEY_L1){
+  #No data
+}else if(KEY=KEY_R2+KEY_R1){
+  #No data
+}else if(KEY=KEY_L2+KEY_UP){
+  rmo(forward2)
+}else if(KEY=KEY_L2+KEY_DN){
+  rmo(back2)
+}else if(KEY=KEY_L2+KEY_LEFT){
+  rmo(turnL2)
+}else if(KEY=KEY_L2+KEY_RIGHT){
+  rmo(right2)
+}else if(KEY=KEY_L2+KEY_A){
+  rmo(up8)
+}else if(KEY=KEY_L2+KEY_B){
+  rmo(up6)
+}else if(KEY=KEY_L2+KEY_C){
+  rmo(up5)
+}else if(KEY=KEY_L2+KEY_D){
+  rmo(up7)
+}else if(KEY=KEY_L2+KEY_L1){
+  #No data
+}else if(KEY=KEY_L2+KEY_R1){
+  #No data
+}else if(KEY=KEY_UP){
+  rmo(forward1)
+}else if(KEY=KEY_DN){
+  rmo(back1)
+}else if(KEY=KEY_LEFT){
+  rmo(turnL1)
+}else if(KEY=KEY_RIGHT){
+  rmo(right1)
+}else if(KEY=KEY_A){
+  rmo(sideR)
+}else if(KEY=KEY_B){
+  rmo(up2)
+}else if(KEY=KEY_C){
+  rmo(up1)
+}else if(KEY=KEY_D){
+  rmo(sideL)
+}
+KEY=0;
+wait(1)
+goto START

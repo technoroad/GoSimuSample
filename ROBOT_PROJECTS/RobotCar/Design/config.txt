@@ -1,0 +1,509 @@
+begin version
+version 00 02
+end
+
+#====================
+begin body
+
+#[0]-----------------
+PartsStart
+BodyName      waist
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    -1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.3000 0.0800
+BodyAlignment PZ
+BodyMass      0.8000
+Space         1
+BodyColor     1.500 2.000 1.500 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  dou1a.stl
+PolyColor 0.000 0.000 2.500 1.000
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 2.4000 1.5000
+PolyCenter  1
+PolyEnd
+
+#[1]-----------------
+PartsStart
+BodyName      eplR
+PhysType      PHYS_ALL
+JointType     FIXED
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 -0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.8000 0.0800 0.1000
+BodyAlignment PY
+BodyMass      0.2000
+Space         1
+BodyColor     0.000 1.500 0.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  dou1a.stl
+PolyColor 0.800 0.000 2.500 1.000
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  7.3000 0.7000 1.9000
+PolyCenter  1
+PolyEnd
+
+#[2]-----------------
+PartsStart
+BodyName      eplL
+PhysType      PHYS_ALL
+JointType     SLIDER
+BodyParent    1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 -0.0500
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.2000
+BodyAlignment PX
+BodyMass      0.2000
+Space         1
+BodyColor     0.000 1.500 0.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  arm.stl
+PolyColor 0.000 1.500 0.000 1.000
+PolyPos   0.0000 -0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.7000 3.8000 2.1500
+PolyCenter  1
+PolyEnd
+
+#[3]-----------------
+PartsStart
+BodyName      hipR
+PhysType      PHYS_ALL
+BodyParent    2
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1500 0.1000 0.0800
+BodyAlignment MZ
+BodyMass      0.2000
+Space         1
+BodyColor     0.200 0.200 0.200 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  dou1a.stl
+PolyColor 1.000 0.000 0.500 1.000
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.3000 0.8000 1.5000
+PolyCenter  1
+PolyEnd
+
+#[4]-----------------
+PartsStart
+BodyName      hipL
+PhysType      PHYS_ALL
+JointType     FIXED
+BodyParent    3
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 1.0000 -0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0800 0.0400 0.0800
+BodyAlignment PY
+BodyMass      0.1000
+Space         1
+BodyColor     0.000 1.000 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[5]-----------------
+PartsStart
+BodyName      momoR
+PhysType      PHYS_ALL
+JointType     SLIDER
+BodyParent    1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 -0.0500
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.2000
+BodyAlignment MX
+BodyMass      0.2000
+Space         1
+BodyColor     0.000 1.500 0.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  arm.stl
+PolyColor 0.000 1.500 0.000 1.000
+PolyPos   0.0000 -0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.7000 3.8000 2.1500
+PolyCenter  1
+PolyEnd
+
+#[6]-----------------
+PartsStart
+BodyName      momoL
+PhysType      PHYS_ALL
+BodyParent    5
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1500 0.1000 0.0800
+BodyAlignment MZ
+BodyMass      0.2000
+Space         1
+BodyColor     0.200 0.200 0.200 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  dou1a.stl
+PolyColor 1.000 0.000 0.500 1.000
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.3000 0.8000 1.5000
+PolyCenter  1
+PolyEnd
+
+#[7]-----------------
+PartsStart
+BodyName      legR
+PhysType      PHYS_ALL
+JointType     FIXED
+BodyParent    6
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0800 0.0400 0.0800
+BodyAlignment PY
+BodyMass      0.1000
+Space         1
+BodyColor     0.000 1.000 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[8]-----------------
+PartsStart
+BodyName      legL
+PhysType      PHYS_ALL
+JointType     FIXED
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.8000 0.0800 0.1000
+BodyAlignment MY
+BodyMass      0.2000
+Space         1
+BodyColor     0.000 1.500 0.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  dou1a.stl
+PolyColor 0.800 0.000 2.500 1.000
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  7.3000 0.7000 1.9000
+PolyCenter  1
+PolyEnd
+
+#[9]-----------------
+PartsStart
+BodyName      ankR
+PhysType      PHYS_ALL
+JointType     SLIDER
+BodyParent    8
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 -0.0500
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.2000
+BodyAlignment PX
+BodyMass      0.2000
+Space         1
+BodyColor     0.000 1.500 0.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  arm.stl
+PolyColor 0.000 1.500 0.000 1.000
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.7000 3.8000 2.1500
+PolyCenter  1
+PolyEnd
+
+#[10]-----------------
+PartsStart
+BodyName      ankL
+PhysType      PHYS_ALL
+BodyParent    9
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1500 0.1000 0.0800
+BodyAlignment MZ
+BodyMass      0.2000
+Space         1
+BodyColor     0.200 0.200 0.200 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  dou1a.stl
+PolyColor 1.000 0.000 0.500 1.000
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.3000 0.8000 1.5000
+PolyCenter  1
+PolyEnd
+
+#[11]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     FIXED
+BodyParent    10
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0800 0.0400 0.0800
+BodyAlignment MY
+BodyMass      0.1000
+Space         1
+BodyColor     0.000 1.000 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[12]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     SLIDER
+BodyParent    8
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 -0.0500
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.2000
+BodyAlignment MX
+BodyMass      0.2000
+Space         1
+BodyColor     0.000 1.500 0.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  arm.stl
+PolyColor 0.000 1.500 0.000 1.000
+PolyPos   0.0000 -0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.7000 3.8000 2.1500
+PolyCenter  1
+PolyEnd
+
+#[13]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    12
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1500 0.1000 0.0800
+BodyAlignment MZ
+BodyMass      0.2000
+Space         1
+BodyColor     0.200 0.200 0.200 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  STL
+PolyName  dou1a.stl
+PolyColor 1.000 0.000 0.500 1.000
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.3000 0.8000 1.5000
+PolyCenter  1
+PolyEnd
+
+#[14]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     FIXED
+BodyParent    13
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0800 0.0400 0.0800
+BodyAlignment MY
+BodyMass      0.1000
+Space         1
+BodyColor     0.000 1.000 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[15]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    4
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 1.0000 0.0000
+BodyType      CYLINDER
+BodyLength    0.100
+BodyRadius    0.150
+BodyPos       0.0000 -0.1100 0.0000
+BodyRot       90.00 0.00 0.00
+BodySize      0.3000 0.3000 0.1000
+BodyAlignment PY
+BodyMass      0.2000
+Space         1
+BodyColor     0.000 1.000 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[16]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    7
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 1.0000 0.0000
+BodyType      CYLINDER
+BodyLength    0.100
+BodyRadius    0.150
+BodyPos       0.0000 -0.1100 0.0000
+BodyRot       90.00 0.00 0.00
+BodySize      0.3000 0.3000 0.1000
+BodyAlignment PY
+BodyMass      0.2000
+Space         1
+BodyColor     0.000 1.000 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[17]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    11
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 1.0000 0.0000
+BodyType      CYLINDER
+BodyLength    0.100
+BodyRadius    0.150
+BodyPos       0.0000 0.1100 0.0000
+BodyRot       90.00 0.00 0.00
+BodySize      0.3000 0.3000 0.1000
+BodyAlignment MY
+BodyMass      0.2000
+Space         1
+BodyColor     0.000 1.000 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[18]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    14
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 1.0000 0.0000
+BodyType      CYLINDER
+BodyLength    0.100
+BodyRadius    0.150
+BodyPos       0.0000 0.1100 0.0000
+BodyRot       90.00 0.00 0.00
+BodySize      0.3000 0.3000 0.1000
+BodyAlignment MY
+BodyMass      0.2000
+Space         1
+BodyColor     0.000 1.000 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+end
+
+#====================
+begin space
+#s1 s2 mode a1    a2    a3
+0 -1 e 1.500 0.200 0.000
+1 0 e 1.500 0.200 0.000
+2 0 e 0.500 0.200 0.000
+end
+
+#====================
+begin foot
+-1 -1
+end
+
+#====================
+begin motor
+#axis     Dir LSBpos LSBvel   trq   speed   Kp      Kd      fric  maxOmg  MinAng  MaxAng DeadBand Type
+#         []  [dg]   [deg/s] [kgfcm]  []     []     []    [kgfcm] [deg/s]  [deg]   [deg]  [deg]  []
+HipY_R     +  0.010    1.000 200.000  8.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 1
+HipY_L     +  0.001    0.001 200.000  8.000 3276.700 88.000  1.000 32.767 -18.000 18.000  0.000 1
+HipR_R     -  0.010    1.000 200.000  8.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 1
+HipR_L     -  0.010    1.000 200.000  8.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 1
+HipP_R     -  0.001    0.001 200.000  8.000 3276.700 88.000  1.000 32.767 -18.000 18.000  0.000 1
+HipP_L     -  0.010    1.000 200.000  8.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 1
+KneP_R     +  0.010    1.000 200.000  8.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 1
+KneP_L     +  0.010    1.000 200.000  8.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 1
+AnkP_R     -  0.001    0.001 200.000  8.000 3276.700 88.000  1.000 32.767 -18.000 18.000  0.000 1
+AnkP_L     -  0.010    1.000 200.000  8.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID11     +  0.010    1.000 200.000  3.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID12     +  0.001    0.001 200.000  3.000 3276.700 88.000  1.000 32.767 -18.000 18.000  0.000 1
+_ID11      +  0.010    1.000 200.000  3.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID12      +  0.010    1.000 200.000  3.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID15      +  0.010    1.000 200.000  3.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 2
+_ID16      +  0.010    1.000 200.000  3.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 2
+_ID17      +  0.010    1.000 200.000  3.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 2
+_ID18      +  0.010    1.000 200.000  3.000 3276.700 88.000  1.000 360.000 -180.000 180.000  0.000 2
+end
+
+#====================
+begin common texture
+tex.bmp
+end
+
+#====================
+begin fix
+off
+end
+
+#====================
+begin cam_body
+0
+end
+
