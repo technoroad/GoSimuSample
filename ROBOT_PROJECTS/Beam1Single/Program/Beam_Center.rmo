@@ -1,0 +1,22 @@
+#W0 2
+#W1 1500
+#W2 10
+#W3 20
+#W4 0
+#W5 0
+#W6 0
+#M 
+#M 
+## 
+## 
+## 
+## 
+## 
+## 
+GyroEna=0;
+_beam1=[
+  Time,HipY_R,HipY_L,HipR_R,HipR_L,HipP_R,HipP_L,KneP_R,KneP_L,AnkP_R,AnkP_L,AnkR_R,AnkR_L,   Dou,  Dou2,  Dou3,  Head,ShoP_R,ShoP_L,ShoR_R,ShoR_L, Arm_R, Arm_L, Elb_R, Elb_L
+   500,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,  9000,     0,     0,     0,     0,     0,     0,     0
+   300,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,  9000,     0,     0,     0,     0,     0,     0,     0
+]
+motion(_beam1)
