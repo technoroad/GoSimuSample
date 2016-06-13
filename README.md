@@ -1,7 +1,9 @@
 # GoSimuSample
 
-Sample projects for [Go Simulation](http://go-simulation.com/).
+Sample projects for [Go Simulation!](http://go-simulation.com/).
 
 
 ROBOT_PROJECTS
-* RobotCar
+* RobotCar [(youtube)](https://www.youtube.com/watch?v=_DGbg270bOU)
+* MultiLegged [(youtube)](https://www.youtube.com/watch?v=GDq1eNoeZpU)
+
