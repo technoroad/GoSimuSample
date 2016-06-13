@@ -1,0 +1,66 @@
+#--------------------
+:START
+if(KEY=KEY_R1){
+  rmo(turn_right)
+}else if(KEY=KEY_L1){
+  rmo(turn_left)
+}else if(KEY=KEY_R2+KEY_UP){
+  #No data
+}else if(KEY=KEY_R2+KEY_DN){
+  #No data
+}else if(KEY=KEY_R2+KEY_LEFT){
+  #No data
+}else if(KEY=KEY_R2+KEY_RIGHT){
+  #No data
+}else if(KEY=KEY_R2+KEY_A){
+  #No data
+}else if(KEY=KEY_R2+KEY_B){
+  #No data
+}else if(KEY=KEY_R2+KEY_C){
+  #No data
+}else if(KEY=KEY_R2+KEY_D){
+  #No data
+}else if(KEY=KEY_R2+KEY_L1){
+  #No data
+}else if(KEY=KEY_R2+KEY_R1){
+  #No data
+}else if(KEY=KEY_L2+KEY_UP){
+  #No data
+}else if(KEY=KEY_L2+KEY_DN){
+  rmo(stop)
+}else if(KEY=KEY_L2+KEY_LEFT){
+  #No data
+}else if(KEY=KEY_L2+KEY_RIGHT){
+  #No data
+}else if(KEY=KEY_L2+KEY_A){
+  #No data
+}else if(KEY=KEY_L2+KEY_B){
+  #No data
+}else if(KEY=KEY_L2+KEY_C){
+  rmo(standingup)
+}else if(KEY=KEY_L2+KEY_D){
+  #No data
+}else if(KEY=KEY_L2+KEY_L1){
+  #No data
+}else if(KEY=KEY_L2+KEY_R1){
+  #No data
+}else if(KEY=KEY_UP){
+  rmo(walk_foward)
+}else if(KEY=KEY_DN){
+  rmo(walk_back)
+}else if(KEY=KEY_LEFT){
+  rmo(walk_left)
+}else if(KEY=KEY_RIGHT){
+  rmo(walk_right)
+}else if(KEY=KEY_A){
+  rmo(run._rightrmo)
+}else if(KEY=KEY_B){
+  rmo(run_back)
+}else if(KEY=KEY_C){
+  rmo(run)
+}else if(KEY=KEY_D){
+  rmo(run._leftrmo)
+}
+KEY=0;
+wait(1)
+goto START
