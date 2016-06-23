@@ -1,0 +1,88 @@
+#A,B,C,D連射許可
+KEY_AUTO = KEY_AUTO | KEY_A | KEY_B | KEY_C | KEY_D;
+
+#フォークの位置のフラグ 0:下 1:上
+#例えば、フォークが下にあるときに、下移動させないため。
+fork_flg = 0; 
+
+vel = 0;
+str = 0;
+
+#--------------------
+:START
+
+#--フォークの上下及び開閉--#
+if( KEY = KEY_L1 ){
+  #フォーク上昇
+  if(fork_flg=0){
+    fork_flg=1;
+    rmo(T_Fork_close)
+    wait(100)
+    rmo(T_Fork_up)
+  }
+}else if( KEY = KEY_R1 ){
+  #フォーク下降
+  if(fork_flg=1){
+    fork_flg=0;
+    rmo(T_Fork_down)
+    wait(100)
+    rmo(T_Fork_open)
+  }
+}
+
+#--ステアリング--#
+if(KEY & KEY_LEFT = KEY_LEFT){
+  #左
+  if(str>-3000){
+    str = str - 40
+  }
+}else if(KEY & KEY_RIGHT = KEY_RIGHT){
+  #右
+  if(str<3000){
+    str = str + 40
+  }
+}else {
+  #センター
+  if(str>0){
+    str = str - 40;
+  }
+  if(str<0){
+    str = str + 40;
+  }
+}
+
+#ステアリング反映
+str1 = str;
+str2 = str;
+
+#--アクセル・ブレーキ--#
+if( KEY & KEY_B = KEY_B){
+  #前進
+  if(vel<300){
+     vel = vel + 5
+  }
+}else if( KEY & KEY_D = KEY_D){
+  #後退
+  if(vel>-200){
+    vel = vel - 5;
+  }
+}else {
+  #stop
+  if(vel>0){
+    vel = vel - 5;
+  }
+  if(vel<0){
+    vel = vel + 5;
+  }
+  if(-5<vel && vel<5){
+     vel=0;
+  }
+}
+
+# 速度反映
+vel1=vel;
+vel2=vel;
+
+wait(1)
+goto START
+
