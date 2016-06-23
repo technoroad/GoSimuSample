@@ -1,0 +1,391 @@
+begin version
+version 00 02
+end
+
+#====================
+begin body
+
+#[0]-----------------
+PartsStart
+BodyName      waist
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    -1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.8000 0.2361 0.1670
+BodyAlignment PZ
+BodyMass      0.2000
+Space         1
+BodyColor     0.600 0.300 1.600 0.000
+BodyDesignSet 2
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  フォークリフト_本体.x
+PolyFrame  0 
+PolyPos   0.0300 0.0000 0.2500
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  フォークリフト_人.x
+PolyFrame  0 
+PolyPos   0.0210 0.0000 0.2800
+PolyDeg   0.0000 0.0000 90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[1]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    0
+JointPos      0.2320 -0.1850 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyType      SPHERE
+BodyRadius    0.030
+BodyPos       0.2320 -0.0370 0.0790
+BodyRot       0.00 0.00 0.00
+BodySize      0.0600 0.0600 0.0600
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 0.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[2]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    0
+JointPos      -0.2320 -0.1850 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyType      SPHERE
+BodyRadius    0.030
+BodyPos       -0.2310 -0.0370 0.0790
+BodyRot       0.00 0.00 0.00
+BodySize      0.0600 0.0600 0.0600
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 0.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[3]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    0
+JointPos      0.2320 0.1850 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyType      SPHERE
+BodyRadius    0.030
+BodyPos       0.2320 0.0370 0.0790
+BodyRot       0.00 0.00 0.00
+BodySize      0.0600 0.0600 0.0600
+BodyAlignment PY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 0.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[4]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    0
+JointPos      -0.2320 0.1850 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyType      SPHERE
+BodyRadius    0.030
+BodyPos       -0.2310 0.0370 0.0790
+BodyRot       0.00 0.00 0.00
+BodySize      0.0600 0.0600 0.0600
+BodyAlignment PY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 0.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[5]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    1
+JointPos      0.0000 0.0000 -0.1400
+JointAxis     0.0000 1.0000 0.0000
+BodyType      CAPPED_CYLINDER
+BodyLength    0.050
+BodyRadius    0.127
+BodyPos       0.0000 0.0000 0.0420
+BodyRot       90.00 0.00 0.00
+BodySize      0.2540 0.2540 0.3040
+BodyAlignment MZ
+BodyMass      0.5000
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  フォークリフト_右前輪.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[6]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    2
+JointPos      0.0000 0.0000 -0.1500
+JointAxis     0.0000 1.0000 0.0000
+BodyType      CAPPED_CYLINDER
+BodyLength    0.050
+BodyRadius    0.110
+BodyPos       -0.0000 0.0000 0.0150
+BodyRot       90.00 0.00 0.00
+BodySize      0.2200 0.2200 0.2700
+BodyAlignment MZ
+BodyMass      0.5000
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  フォークリフト_右後輪.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[7]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    3
+JointPos      0.0000 0.0000 -0.1400
+JointAxis     0.0000 1.0000 0.0000
+BodyType      CAPPED_CYLINDER
+BodyLength    0.050
+BodyRadius    0.127
+BodyPos       0.0000 0.0000 0.0420
+BodyRot       90.00 0.00 0.00
+BodySize      0.2540 0.2540 0.3040
+BodyAlignment MZ
+BodyMass      0.5000
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  フォークリフト_左前輪.x
+PolyFrame  0 
+PolyPos   -0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[8]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    4
+JointPos      0.0000 0.0000 -0.1500
+JointAxis     0.0000 1.0000 0.0000
+BodyType      CAPPED_CYLINDER
+BodyLength    0.050
+BodyRadius    0.110
+BodyPos       0.0000 0.0000 0.0150
+BodyRot       90.00 0.00 0.00
+BodySize      0.2200 0.2200 0.2700
+BodyAlignment MZ
+BodyMass      0.5000
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  フォークリフト_左後輪.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[9]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     FIXED
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0270 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.6780 0.3950 0.5680
+BodyAlignment PZ
+BodyMass      0.0100
+Space         1
+BodyColor     0.000 0.000 10.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[10]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     SLIDER
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       -0.0000 0.0020 -0.0010
+BodyRot       0.00 0.00 0.00
+BodySize      0.0150 0.4640 0.1000
+BodyAlignment PX
+BodyMass      0.0100
+Space         0
+BodyColor     0.000 0.000 10.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  フォークリフト_リフト.x
+PolyFrame  0 
+PolyPos   -0.0188 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[11]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     SLIDER
+BodyParent    10
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 1.0000 0.0000
+BodyPos       0.0000 -0.1826 0.0010
+BodyRot       0.00 0.00 0.00
+BodySize      0.4610 0.0250 0.1000
+BodyAlignment PX
+BodyMass      0.0100
+Space         0
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  フォークリフト_フォーク（右）.x
+PolyFrame  0 
+PolyPos   -0.0117 -0.0187 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[12]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     SLIDER
+BodyParent    10
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 1.0000 0.0000
+BodyPos       0.0000 0.1826 0.0010
+BodyRot       0.00 0.00 0.00
+BodySize      0.4610 0.0250 0.1000
+BodyAlignment PX
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  フォークリフト_フォーク（左）.x
+PolyFrame  0 
+PolyPos   -0.0117 0.0187 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+end
+
+#====================
+begin space
+#s1 s2 mode a1    a2    a3
+0 -1 e 1.500 0.200 0.000
+1 0 e 1.500 0.200 0.000
+2 1 e 1.500 0.200 0.000
+3 2 e 1.500 0.200 0.000
+4 2 e 1.500 0.200 0.000
+5 0 e 0.500 0.200 0.000
+6 0 e 0.500 0.200 0.000
+end
+
+#====================
+begin foot
+-1 -1
+end
+
+#====================
+begin motor
+#axis     Dir LSBpos LSBvel   trq   speed   Kp      Kd      fric  maxOmg  MinAng  MaxAng DeadBand Type
+#         []  [dg]   [deg/s] [kgfcm]  []     []     []    [kgfcm] [deg/s]  [deg]   [deg]  [deg]  []
+__         +  0.010    1.000 2000.000  3.000 3276.500 88.000  1.000 360.000 -180.000 180.000  0.000 1
+str1       +  0.010    1.000 2000.000  3.000 3276.500 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID3      +  0.010    1.000 2000.000  3.000 3276.500 88.000  1.000 360.000 -180.000 180.000  0.000 1
+str2       +  0.010    1.000 2000.000  3.000 3276.500 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID1       +  0.010    1.000  0.000  0.000  0.000  0.000  0.000  0.000 -180.000 180.000  0.000 2
+vel1       +  0.010    1.000 50.000  3.000 3276.500 88.000  1.000 360.000 -180.000 180.000  0.000 2
+_ID3       +  0.010    1.000  0.000  0.000  0.000  0.000  0.000  0.000 -180.000 180.000  0.000 2
+vel2       +  0.010    1.000 50.000  3.000 3276.500 88.000  1.000 360.000 -180.000 180.000  0.000 2
+_ID10      +  0.010    1.000 50.000  3.000 3276.500 88.000  1.000 32767.000  0.000 180.000  0.000 1
+_ID17      +  0.001    0.001 50.000  3.000 3276.500 88.000  1.000 32.767 -18.000 18.000  0.000 1
+_ID19      +  0.001    0.001 50.000  3.000 3276.500 88.000  1.000 32.767 -18.000 18.000  0.000 1
+_ID20      +  0.001    0.001 50.000  3.000 3276.500 88.000  1.000 32.767 -18.000 18.000  0.000 1
+end
+
+#====================
+begin common texture
+tex.bmp
+end
+
+#====================
+begin fix
+off
+end
+
+#====================
+begin cam_body
+0
+end
+
