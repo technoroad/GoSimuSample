@@ -11,4 +11,5 @@ ROBOT_PROJECTS
   - L2+Left : aim left
   - L2+Right : aim right
   - L2+A : fire!
+* Forklift
 
