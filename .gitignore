@@ -3,3 +3,11 @@ WINDOW/
 
 beginner.txt
 $temp.txt
+
+*.ncb
+*.suo
+*.user
+[Dd]ebug/
+[Rr]elease/
+
+

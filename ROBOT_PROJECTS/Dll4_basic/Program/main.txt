@@ -1,0 +1,2 @@
+dll_run(DllCont4)
+#run(joystick)

@@ -1,0 +1,8 @@
+LIBRARY	"DllCont4"
+EXPORTS
+    Dll4_Initialize @2
+    Dll4_Run @3
+    Dll4_Cam @4
+    Dll_GetDllVersion @5
+     
+     
