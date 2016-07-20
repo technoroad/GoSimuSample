@@ -1,0 +1,8 @@
+begin distance_sensor
+#body len[m] LSB  posx posy posz[m]  rol pit yaw[deg]
+ 0  8.000 0.001  0.05 0.0 0.0   0 0 -45
+ 0  8.000 0.001  0.05 0.0 0.0   0 0  0
+ 0  8.000 0.001  0.05 0.0 0.0   0 0 45
+end
+
+

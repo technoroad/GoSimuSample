@@ -1,0 +1,25 @@
+#W0 2
+#W1 1500.000000
+#W2 10.000000
+#W3 20.000000
+#W4 0.000000
+#W5 0.000000
+#W6 0.000000
+#M 
+#M 
+## 
+## 
+## 
+## 
+## 
+## 
+## 
+## 
+## 
+GyroEna=0;
+_0not_home=[
+  Time,HipY_R,HipY_L,HipR_R,HipR_L,HipP_R,HipP_L,KneP_R,KneP_L,AnkP_R,AnkP_L,AnkR_R,AnkR_L,   Dou,  Dou2,  Dou3,  Head,ShoP_R,ShoP_L,ShoR_R,ShoR_L, Arm_R, Arm_L, Elb_R, Elb_L
+  1000,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,   200,     0
+   900,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,     0,  3600,     0,     0,     0,     0,   200,     0
+]
+motion(_0not_home);
