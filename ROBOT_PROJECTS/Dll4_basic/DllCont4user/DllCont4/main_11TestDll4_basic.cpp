@@ -24,12 +24,18 @@ void testAnalogJoypad(DLL_SIM_ROBOT4 *sim);
 void testMotionDSensor( DLL_SIM_ROBOT4 *sim);
 void testCamera( DLL_SIM_ROBOT4 *sim);
 void testTorqueRef(DLL_SIM_ROBOT4 *sim);
+void testSimulinkFootSensoer(DLL_SIM_ROBOT4 *sim);
+void testZmpCalcInDll(DLL_SIM_ROBOT4 *sim);
 
 PF_ResetRobot            ResetRobot;
 PF_GetRobotFilePath      GetRobotFilePath;
 PF_GetAnalogJoypadStatus GetAnalogJoypadStatus;
 PF_GetNormalJoypadStatus GetNormalJoypadStatus;
 PF_SetRefMotorTorque SetRefMotorTorque;
+PF_GetForceTorqueSensor_R GetForceTorqueSensor_R;
+PF_GetForceTorqueSensor_L GetForceTorqueSensor_L;
+PF_GetZmpLpfFreq          GetZmpLpfFreq;
+PF_SetZmpLpfFreq          SetZmpLpfFreq;
 
 //-----------------------------------------------------------------------
 // DllMain
@@ -115,6 +121,34 @@ bool __stdcall Dll4_Initialize( DLL_SIM_ROBOT4 *sim) {
 		return false;
 	}
 
+	GetForceTorqueSensor_R = (PF_GetForceTorqueSensor_R)(sim->GetFunc("GetForceTorqueSensor_R"));
+	if(GetForceTorqueSensor_R==NULL){
+		wchar_t *s=L"error. couldn't find function 'GetForceTorqueSensor_R'.";
+		sim->PrintCommandWindow(s);
+		return false;
+	}
+
+	GetForceTorqueSensor_L = (PF_GetForceTorqueSensor_L)(sim->GetFunc("GetForceTorqueSensor_L"));
+	if(GetForceTorqueSensor_L==NULL){
+		wchar_t *s=L"error. couldn't find function 'GetForceTorqueSensor_L'.";
+		sim->PrintCommandWindow(s);
+		return false;
+	}
+
+
+	GetZmpLpfFreq = (PF_GetZmpLpfFreq)(sim->GetFunc("GetZmpLpfFreq"));
+	if(GetZmpLpfFreq==NULL){
+		wchar_t *s=L"error. couldn't find function 'GetZmpLpfFreq'.";
+		sim->PrintCommandWindow(s);
+		return false;
+	}
+
+	SetZmpLpfFreq = (PF_SetZmpLpfFreq)(sim->GetFunc("SetZmpLpfFreq"));
+	if(SetZmpLpfFreq==NULL){
+		wchar_t *s=L"error. couldn't find function 'SetZmpLpfFreq'.";
+		sim->PrintCommandWindow(s);
+		return false;
+	}
 	return true;
 }
 
@@ -128,11 +162,12 @@ void __stdcall Dll4_Run( DLL_SIM_ROBOT4 *sim) {
 	int idt = (int)(sim->dt/0.001);
 	gImsec+=idt;
 
-	//select a test function
-	//	testAnalogJoypad(sim);
+	//[[[ select a test function ]]]
 	testMotionDSensor(sim);
+	//	testAnalogJoypad(sim);
 	//	testCamera(sim);
 	//	testTorqueRef(sim);
+	//	testZmpCalcInDll(sim);
 	return;
 }
 
@@ -360,6 +395,82 @@ void testTorqueRef(DLL_SIM_ROBOT4 *sim){
 
 		bx = x;//back up
 	}
+
+}
+
+// Test : Calculate ZMP In this DLL
+// Go Simulation! has the ZMP calculation function,
+// it is possible the user calculate zmp by their algorism.
+void testZmpCalcInDll(DLL_SIM_ROBOT4 *sim){
+
+	// In GoSimu, ZMP is calulated, and this ZMP value is applied 2nd low-pass-filter(LPF);
+	// In this sample, as we want to use ZMP value which is not applied LPF, LPF freq is set to very high(10000Hz).
+	double now_freq=GetZmpLpfFreq();
+	if(now_freq<10000.0){
+		printf("now_freq! = %lf\n",now_freq);
+		SetZmpLpfFreq(10000.0);//NO LPF
+	}
+
+
+	wcscpy(sim->Command,L"rmo(0Walk)");
+	double posR[3], fR[3],tR[3];
+	double posL[3], fL[3],tL[3];
+
+	bool retR = GetForceTorqueSensor_R(posR, fR, tR);
+	bool retL = GetForceTorqueSensor_L(posL, fL, tL);
+	if(retR==false || retL==false){
+		return;
+	}
+
+	double dd = 0.04;//distance between ground and senser position.
+
+	//Check of Contact
+	//force z(fR[2]) should be minus. If not, a foot does not contact to ground.
+	if(fR[2] >= 0 ){
+		fR[0] = fR[1] = fR[2]=0;
+		tR[0] = tR[1] = tR[2]=0;
+	}
+	if(fL[2] >= 0 ){
+		fL[0] = fL[1] = fL[2]=0;
+		tL[0] = tL[1] = tL[2]=0;
+	}
+
+	bool Zmp_exist=true;
+	if(fR[2] >= 0 && fL[2] >= 0 ){
+		Zmp_exist=false;//ZMPが存在しない
+	}
+
+	if(Zmp_exist){
+		
+		//ヒューマノイドロボット　3.24 3.25式
+		double numX=0;
+		numX += -tR[1] - dd * fR[0] + posR[0] * fR[2];
+		numX += -tL[1] - dd * fL[0] + posL[0] * fL[2];
+		double denX=0;
+		denX += fR[2];
+		denX += fL[2];
+
+		double numY=0;
+		numY += tR[0] - dd * fR[1] + posR[1] * fR[2];
+		numY += tL[0] - dd * fL[1] + posL[1] * fL[2];
+		double denY=0;
+		denY += fR[2];
+		denY += fL[2];
+
+		//ZMP
+		double zmp[3];
+		zmp[0] = numX/denX;
+		zmp[1] = numY/denY;
+		zmp[2] = 0; //contact point (ground) is z=0;
+
+		//Show in CommandWIndow
+		wchar_t s[128];
+		swprintf(s,L"zmp gosimu %.3lf %.3lf %.3lf",sim->ZmpPos[0],sim->ZmpPos[1],sim->ZmpPos[2]);
+		sim->PrintCommandWindow(s);
+		swprintf(s,L" : dll %.3lf %.3lf %.3lf\r\n",zmp[0], zmp[1], zmp[2]);
+		sim->PrintCommandWindow(s);
+	}
+
 
 }
 

@@ -63,6 +63,10 @@ typedef const wchar_t * (*PF_GetRobotFilePath)(void);
 typedef void (*PF_GetAnalogJoypadStatus)(double stick[4], double cross[2]);
 typedef int (*PF_GetNormalJoypadStatus)(void);
 typedef void (*PF_SetRefMotorTorque)(int id, double torque);
+typedef bool (*PF_GetForceTorqueSensor_R)(double position[3], double force[3], double torque[3]);
+typedef bool (*PF_GetForceTorqueSensor_L)(double position[3], double force[3], double torque[3]);
+typedef double (*PF_GetZmpLpfFreq)(void);
+typedef void (*PF_SetZmpLpfFreq)(double freq_hz);
 
 //------------------------------------------------------------------------------------
 // Camera Data
