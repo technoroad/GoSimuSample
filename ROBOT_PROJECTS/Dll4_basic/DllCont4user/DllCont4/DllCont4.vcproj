@@ -173,6 +173,10 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\init_function.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\main.def"
 				>
 			</File>
@@ -188,6 +192,10 @@
 			>
 			<File
 				RelativePath=".\DllCont4.h"
+				>
+			</File>
+			<File
+				RelativePath=".\init_function.h"
 				>
 			</File>
 		</Filter>
