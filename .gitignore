@@ -7,7 +7,9 @@ $temp.txt
 *.ncb
 *.suo
 *.user
+*.sdf
+*.user
 [Dd]ebug/
 [Rr]elease/
-
+ipch/
 
