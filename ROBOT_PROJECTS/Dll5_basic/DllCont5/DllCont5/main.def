@@ -1,0 +1,5 @@
+LIBRARY	"DllCont5"
+EXPORTS
+    Dll_Initialize @2
+    Dll_Run @3
+    Dll_GetDllVersion @5

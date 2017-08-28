@@ -20,3 +20,5 @@ ROBOT_PROJECTS
 ユーザープログラムをDLLで作成するサンプル
 詳細はプロジェクト内のREADME.mdを参照してください。
 
+## License
+MIT
