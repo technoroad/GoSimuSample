@@ -53,7 +53,6 @@ void testTorqueRef();
 void testZmpCalcInDll();
 void testFootTouchSensor();
 void testIk();
-
 void testContact();
 void testTcpClient();
 
@@ -211,7 +210,7 @@ void testAnalogJoypad(){
 	PrintMsg("cross = %lf %lf \n", ana_cross2[0], ana_cross2[1]);
 
 	//Display the status of the normal joypad
-	PrintMsg("normal = %d \n", robo.joypad.GetNormalJoypad());
+	PrintMsg("normal = %d \n", robo.joypad.GetNormalStatus());
 
 	//The shoulder joint of the robot is driven according to the operation amount of the analog joypad.
 	double ref17 = -ana_stick4[1] * 90;
@@ -563,6 +562,7 @@ void testTcpClient(){
 	}
 
 	if (gImsec == 6000){
+		PrintMsg("DLL Finished.\n");
 		robo.FinishDll();
 	}
 }

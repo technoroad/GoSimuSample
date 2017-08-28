@@ -249,7 +249,7 @@ const unsigned char * CCamera::GetImageOnce(){
 
 
 #pragma region CJoyPad
-int CJoyPad::GetNormalJoypad(){
+int CJoyPad::GetNormalStatus(){
 	return GetNormalJoypadStatus();
 }
 void CJoyPad::GetAnalogStatus(double stick[4], double cross[2]){

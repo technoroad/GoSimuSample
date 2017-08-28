@@ -93,18 +93,27 @@ public:
 
 class CCamera {
 public:
+	//Start capture.
 	void StartCapture();
+	//Stop capture
 	void StopCapture();
+	//Check whether the camera data has been updated.
 	bool IsCaptured();
+
+	//Get width of captured image
 	int GetWidth();
+	//Get height of captured image
 	int GetHeight();
+	//Get captured image
 	const unsigned char * GetImageOnce();
 };
 
 
 class CJoyPad {
 public:
-	int GetNormalJoypad();
+	//Get the status of normal button
+	int GetNormalStatus();
+	//Get the status of analog stick and cross button.
 	void GetAnalogStatus(double stick[4], double cross[2]);
 };
 
@@ -115,15 +124,20 @@ public:
 	CMotor motor;
 	CJoyPad joypad;
 
+	//Finish this dll program
 	void FinishDll();
 	//Reset robot simulation.
 	void Reset();
+	//Get dt[msec]
 	double GetDt();
 	//Get robot project's full path
 	std::wstring GetProjectPath();
+
 	//Run script command
 	void RunScript(const wchar_t *cmd);
 	void RunScript(const std::wstring &cmd);
+
+	//Get the number of joints 
 	int GetJontCount();
 	//GetBody Position Vector
 	void GetBodyPos(double ret_pos[3], int axis);
