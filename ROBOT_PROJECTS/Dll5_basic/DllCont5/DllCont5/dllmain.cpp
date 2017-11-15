@@ -67,7 +67,7 @@ CRobot robo;
 void __stdcall Dll_Run() {
 
 	//[[[ select the test function ]]]
-	testBasic();
+	//testBasic();
 	//testDistanceSensor();
 	//testAnalogJoypad();
 	//testCamera();
@@ -77,7 +77,7 @@ void __stdcall Dll_Run() {
 	//testFootTouchSensor();
 	//testIk();
 	//testContact();
-	//testTcpClient();
+	testTcpClient();
 
 	//Time count up
 	int dt = (int)(robo.GetDt() / 0.001);
@@ -533,18 +533,21 @@ MyTcpTelem gTcpTlm;
 
 void testTcpClient(){
 	char ipadr[] = "127.0.0.1";
-	int PORT = 50000;
+	int port = 50000;
 	//Initialize
 	if (gImsec == 0){
-		bool ret = gTcpClient.Connect(ipadr, PORT);
+		bool ret = gTcpClient.Connect(ipadr, port);
 		if (ret == false){
 			PrintMsg("Could not connect to TCP server(%s).\n", ipadr);
 			robo.FinishDll();
 		}
 	}
 
-	//Communicate only when there is received data
-	if (gTcpClient.Select()){// if received
+	//Receive all. 
+	//Only the last received data is used.
+	//受信バッファにたまっているものを全て取り出し、最新の値を使用する
+	bool is_received = false;
+	while (gTcpClient.Select()){// if there are received data in buffer
 		//receive
 		int recv_num = gTcpClient.Recv((char*)(&gTcpCmd), sizeof(gTcpCmd));
 		if (recv_num <= 0){
@@ -553,12 +556,22 @@ void testTcpClient(){
 			PrintMsg("Connection Error\n");
 			robo.FinishDll();
 		}
-		PrintMsg("Recv -> gTcpCmd.CommandA = %d\n", gTcpCmd.CommandA);
+		is_received = true;
+	}
 
+	//If received, print thmem. And send message.
+	if(is_received){
+		//print
+		PrintMsg("Recv -> gTcpCmd.CommandA = %d\n", gTcpCmd.CommandA);
 		//send
 		gTcpTlm.AnswerX = 0.001 * gTcpCmd.CommandA;
 		PrintMsg("Send <- gTcpTlm.AnswerX = %lf\n", gTcpTlm.AnswerX);
 		gTcpClient.Send((char*)(&gTcpTlm), sizeof(gTcpTlm));
+
+		//move axis #17
+		int axis=17;
+		double ref = gTcpTlm.AnswerX;
+		robo.motor.SetRefPos(axis, ref * DEG2RAD);
 	}
 
 	if (gImsec == 6000){
