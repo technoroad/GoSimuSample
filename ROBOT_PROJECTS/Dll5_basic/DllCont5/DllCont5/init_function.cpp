@@ -284,7 +284,7 @@ void CRobot::GetBodyPos(double ret_pos[3], int axis){
 	::GetBodyPos(ret_pos, axis);
 }
 void CRobot::GetBodyRot(double ret_R[12], int axis){
-	::GetBodyPos(ret_R, axis);
+	::GetBodyRot(ret_R, axis);
 }
 void CRobot::ToSimulink50(double buf[50]){
 	::ToSimulink50(buf);

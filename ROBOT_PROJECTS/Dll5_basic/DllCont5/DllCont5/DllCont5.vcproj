@@ -161,6 +161,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
+				CommandLine="copy  &quot;..\Release\DllCont5.dll&quot; &quot;..\..\Program\DllCont5.dll&quot;"
 			/>
 		</Configuration>
 	</Configurations>
