@@ -16,9 +16,16 @@ ROBOT_PROJECTS
   - L2+A : ビーム発射
 * Forklift
 フォークリフト型ロボット
-* Dll4_basic
+* Dll5_basic
 ユーザープログラムをDLLで作成するサンプル
 詳細はプロジェクト内のREADME.mdを参照してください。
+
+STAGES
+* Blocks ブロックが積み重ねられたステージ
+* Blocks2 ブロックと壁のあるステージ。ビームのテスト用に。
+* ForkliftGame　ロボットデータForklift用のゲームステージ
+* Moon4　月面を模擬したオフロードな地形。重力1/6。
+* Soccer2　サッカーのステージの改良版
 
 ## License
 MIT

@@ -1,0 +1,340 @@
+begin version
+version 00 02
+end
+
+#====================
+begin body
+
+#[0]-----------------
+PartsStart
+BodyName      waist
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    -1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0001 0.0001 0.0010
+BodyAlignment 0
+BodyMass      0.0100
+Space         0
+BodyColor     1.500 2.000 1.500 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  soccer_field.x
+PolyFrame  0 
+PolyPos   0.0140 0.0000 0.2840
+PolyDeg   0.0000 0.0000 90.0000
+PolyZoom  0.6500 0.6650 0.6000
+PolyCenter  1
+PolyEnd
+
+#[1]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyType      SPHERE
+BodyRadius    0.062
+BodyPos       0.0000 0.0000 0.2000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1240 0.1240 0.1240
+BodyAlignment PZ
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  soccer_ball.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[2]-----------------
+PartsStart
+BodyName      aa
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 2.3150 0.2500
+BodyRot       6.00 0.00 0.00
+BodySize      0.7000 0.0400 0.4900
+BodyAlignment 0
+BodyMass      0.0010
+Space         2
+BodyColor     2.000 2.000 2.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  soccerGoal.x
+PolyFrame  0 
+PolyPos   -0.0000 -0.1000 0.0180
+PolyDeg   -96.0000 0.0000 0.0000
+PolyZoom  0.2500 0.2500 0.2500
+PolyCenter  1
+PolyEnd
+
+#[3]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -2.3150 0.2500
+BodyRot       -6.00 0.00 0.00
+BodySize      0.7000 0.0400 0.4900
+BodyAlignment 0
+BodyMass      0.0010
+Space         2
+BodyColor     2.000 2.000 2.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  soccerGoal.x
+PolyFrame  0 
+PolyPos   0.0000 0.1000 0.0180
+PolyDeg   -84.0000 -180.0000 0.0000
+PolyZoom  0.2500 0.2500 0.2500
+PolyCenter  1
+PolyEnd
+
+#[4]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 2.1800 0.5200
+BodyRot       0.00 0.00 0.00
+BodySize      0.7000 0.2230 0.0400
+BodyAlignment MZ
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[5]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -2.1800 0.5200
+BodyRot       0.00 0.00 0.00
+BodySize      0.7000 0.2230 0.0400
+BodyAlignment MZ
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[6]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    4
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.3760 0.0280 0.0400
+BodyRot       0.00 0.00 0.00
+BodySize      0.0400 0.2800 0.5200
+BodyAlignment MZ
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[7]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    5
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.3760 -0.0280 0.0400
+BodyRot       0.00 0.00 0.00
+BodySize      0.0400 0.2800 0.5200
+BodyAlignment MZ
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[8]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    4
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -0.3760 0.0280 0.0400
+BodyRot       0.00 0.00 0.00
+BodySize      0.0400 0.2800 0.5200
+BodyAlignment MZ
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[9]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    5
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -0.3760 -0.0280 0.0400
+BodyRot       0.00 0.00 0.00
+BodySize      0.0400 0.2800 0.5200
+BodyAlignment MZ
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[10]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -1.6000 0.0000 0.5800
+BodyRot       0.00 0.00 0.00
+BodySize      0.0500 5.0000 0.5800
+BodyAlignment MZ
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[11]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       1.6310 0.0000 0.5800
+BodyRot       0.00 0.00 0.00
+BodySize      0.0500 5.0000 0.5800
+BodyAlignment MZ
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[12]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0140 -2.5160 0.5800
+BodyRot       0.00 0.00 0.00
+BodySize      3.1950 0.0500 0.5800
+BodyAlignment MZ
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[13]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0140 2.5150 0.5800
+BodyRot       0.00 0.00 0.00
+BodySize      3.1950 0.0500 0.5800
+BodyAlignment MZ
+BodyMass      0.0100
+Space         2
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+end
+
+#====================
+begin space
+#s1 s2 mode a1    a2    a3
+0 -1 e 1.500 0.500 0.000
+1 0 e 1.500 0.500 0.000
+2 -2 e 1.500 0.500 0.000
+end
+
+#====================
+begin foot
+-1 -1
+end
+
+#====================
+begin motor
+#axis      LSB    trq   speed   Kp    Kd    fric  maxOmg  MinAng  MaxAng DeadBand Type
+#         [dg]  [kgfcm]  []     []    []  [kgfcm] [deg/s]  [deg]   [deg]  [deg]  []
+__temp1  + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+__temp2  + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID3     + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID4     + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID5     + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID6     + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID7     + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID8     + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID9     + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID10    + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID11    + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID12    + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+_ID13    + 0.010 1.0  50.00   3.00  3943.00  88.00   1.00  360.00 -180.00  180.00   0.00 1
+end
+
+#====================
+begin common texture
+wall.jpg
+end
+
+#====================
+begin fix
+on
+end
+
+#====================
+begin cam_body
+0
+end
+

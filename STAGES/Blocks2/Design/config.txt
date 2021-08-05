@@ -1,0 +1,355 @@
+begin version
+version 00 02
+end
+
+#====================
+begin body
+
+#[0]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    -1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1800 0.1800 0.2000
+BodyAlignment PX
+BodyMass      0.0100
+Space         11
+BodyColor     1.000 1.000 3.100 1.000
+BodyDesignSet 0
+PartsEnd
+#[1]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1750 0.1750 0.2000
+BodyAlignment PZ
+BodyMass      0.0100
+Space         10
+BodyColor     1.000 2.500 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[2]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1700 0.1700 0.1500
+BodyAlignment PZ
+BodyMass      0.0100
+Space         9
+BodyColor     3.100 1.900 0.900 1.000
+BodyDesignSet 0
+PartsEnd
+#[3]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0200 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1800 0.1800 0.2000
+BodyAlignment PY
+BodyMass      0.0100
+Space         14
+BodyColor     1.000 1.000 3.100 1.000
+BodyDesignSet 0
+PartsEnd
+#[4]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    3
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1750 0.1750 0.2000
+BodyAlignment PZ
+BodyMass      0.0100
+Space         13
+BodyColor     1.000 2.500 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[5]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    4
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1700 0.1700 0.1500
+BodyAlignment PZ
+BodyMass      0.0100
+Space         12
+BodyColor     3.100 1.900 0.900 1.000
+BodyDesignSet 0
+PartsEnd
+#[6]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0200 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1800 0.1800 0.2000
+BodyAlignment MY
+BodyMass      0.0100
+Space         8
+BodyColor     1.000 1.000 3.100 1.000
+BodyDesignSet 0
+PartsEnd
+#[7]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    6
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1750 0.1750 0.2000
+BodyAlignment PZ
+BodyMass      0.0100
+Space         7
+BodyColor     1.000 2.500 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[8]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    7
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1700 0.1700 0.1500
+BodyAlignment PZ
+BodyMass      0.0100
+Space         6
+BodyColor     3.100 1.900 0.900 1.000
+BodyDesignSet 0
+PartsEnd
+#[9]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    3
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0200 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1800 0.1800 0.2000
+BodyAlignment PY
+BodyMass      0.0100
+Space         17
+BodyColor     1.000 1.000 3.100 1.000
+BodyDesignSet 0
+PartsEnd
+#[10]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    9
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1750 0.1750 0.2000
+BodyAlignment PZ
+BodyMass      0.0100
+Space         16
+BodyColor     1.000 2.500 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[11]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    10
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1700 0.1700 0.1500
+BodyAlignment PZ
+BodyMass      0.0100
+Space         15
+BodyColor     3.100 1.900 0.900 1.000
+BodyDesignSet 0
+PartsEnd
+#[12]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    6
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0200 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1800 0.1800 0.2000
+BodyAlignment MY
+BodyMass      0.0100
+Space         5
+BodyColor     1.000 1.000 3.100 1.000
+BodyDesignSet 0
+PartsEnd
+#[13]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    12
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1750 0.1750 0.2000
+BodyAlignment PZ
+BodyMass      0.0100
+Space         4
+BodyColor     1.000 2.500 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[14]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    13
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1700 0.1700 0.1500
+BodyAlignment PZ
+BodyMass      0.0100
+Space         3
+BodyColor     3.100 1.900 0.900 1.000
+BodyDesignSet 0
+PartsEnd
+#[15]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -2.0000 0.0000 -0.1980
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 1.5000 0.5000
+BodyAlignment PZ
+BodyMass      0.0100
+Space         2
+BodyColor     5.000 2.000 2.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[16]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    15
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyType      SPHERE
+BodyRadius    0.106
+BodyPos       -0.0540 0.0000 -0.0420
+BodyRot       0.00 0.00 0.00
+BodySize      0.2120 0.2120 0.2120
+BodyAlignment PZ
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+end
+
+#====================
+begin space
+#s1 s2 mode a1    a2    a3
+0 -1 e 1.500 0.500 0.000
+1 0 e 1.500 0.500 0.000
+2 -2 e 1.500 0.500 0.000
+3 1 e 0.500 0.200 0.000
+4 1 e 0.500 0.200 0.000
+5 1 e 0.500 0.200 0.000
+6 1 e 0.500 0.200 0.000
+7 1 e 0.500 0.200 0.000
+8 1 e 0.500 0.200 0.000
+9 1 e 0.500 0.200 0.000
+10 1 e 0.500 0.200 0.000
+11 1 e 0.500 0.200 0.000
+12 1 e 0.500 0.200 0.000
+13 1 e 0.500 0.200 0.000
+14 1 e 0.500 0.200 0.000
+15 1 e 0.500 0.200 0.000
+16 1 e 0.500 0.200 0.000
+17 1 e 0.500 0.200 0.000
+end
+
+#====================
+begin foot
+-1 -1
+end
+
+#====================
+begin motor
+#axis     Dir LSBpos LSBvel   trq   speed   Kp      Kd      fric  maxOmg  MinAng  MaxAng DeadBand Type
+#         []  [dg]   [deg/s] [kgfcm]  []     []     []    [kgfcm] [deg/s]  [deg]   [deg]  [deg]  []
+_ID1       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID2       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID3       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID4       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID5       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID6       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID7       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID8       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID9       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID10      +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID11      +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID12      +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID13      +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID14      +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID15      +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID16      +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+end
+
+#====================
+begin fix
+off
+end
+

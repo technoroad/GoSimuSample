@@ -1,0 +1,1304 @@
+begin version
+version 00 02
+end
+
+#====================
+begin body
+
+#[0]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    -1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0010 0.0010 0.0010
+BodyAlignment PZ
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 1.000
+BodyDesignSet 0
+PartsEnd
+#[1]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 -0.1470
+BodyRot       0.00 -10.00 0.00
+BodySize      1.0000 1.5000 0.0010
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.300
+BodyDesignSet 2
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_直線.x
+PolyFrame  0 
+PolyPos   0.0000 -0.0000 -0.0045
+PolyDeg   0.0000 10.0000 -90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_誘導路.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0007
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[2]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -1.7220 -0.7530 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.3000 0.3000 0.3000
+BodyAlignment PX
+BodyMass      0.1000
+Space         0
+BodyColor     1.500 1.500 1.500 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.1500 0.1500 0.1500
+PolyCenter  1
+PolyEnd
+
+#[3]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -0.0120 0.0000 -0.1302
+BodyRot       0.00 10.00 0.00
+BodySize      1.5000 1.5000 0.0010
+BodyAlignment PX
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.300
+BodyDesignSet 4
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_カーブ.x
+PolyFrame  0 
+PolyPos   0.0000 -0.0000 -0.0045
+PolyDeg   0.0000 0.0000 -90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_誘導路.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0007
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.5000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_橋支柱.x
+PolyFrame  0 
+PolyPos   -0.7250 -0.7250 -0.0870
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_橋支柱.x
+PolyFrame  0 
+PolyPos   0.7250 -0.7250 -0.0870
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[4]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    3
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0090 0.0870
+BodyRot       -10.00 0.00 0.00
+BodySize      1.5000 1.0000 0.0010
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.300
+BodyDesignSet 2
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_横直線.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 -0.0045
+PolyDeg   10.0000 0.0000 -90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_誘導路.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0007
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.5000 0.6700 1.0000
+PolyCenter  1
+PolyEnd
+
+#[5]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    4
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -0.0000 0.0310 -0.1710
+BodyRot       20.00 0.00 0.00
+BodySize      1.5000 1.0000 0.0010
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.300
+BodyDesignSet 2
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_横直線.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 -0.0045
+PolyDeg   10.0000 0.0000 -90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_誘導路.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0007
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.5000 0.6700 1.0000
+PolyCenter  1
+PolyEnd
+
+#[6]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    5
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0120 0.1300
+BodyRot       -10.00 0.00 0.00
+BodySize      1.5000 1.5000 0.0010
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 4
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_カーブ.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 -0.0045
+PolyDeg   0.0000 0.0000 90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_誘導路.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0007
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.5000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_橋支柱.x
+PolyFrame  0 
+PolyPos   0.7250 0.7250 -0.0870
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_橋支柱.x
+PolyFrame  0 
+PolyPos   -0.7250 0.7250 -0.0870
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[7]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    6
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -0.0090 0.0000 -0.0873
+BodyRot       0.00 10.00 0.00
+BodySize      1.0000 1.5000 0.0010
+BodyAlignment PX
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.300
+BodyDesignSet 2
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_直線.x
+PolyFrame  0 
+PolyPos   0.0000 -0.0000 -0.0045
+PolyDeg   0.0000 -10.0000 90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_誘導路.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0020
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[8]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    3
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.2730 -0.0090 -0.0970
+BodyRot       0.00 0.00 0.00
+BodySize      10.0000 0.0500 0.1500
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 2
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_川壁.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_水面.x
+PolyFrame  0 
+PolyPos   0.0000 -0.8940 -0.0740
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[9]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    8
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -1.7760 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      10.0000 0.0500 0.1500
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 3
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_川壁.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_地面.x
+PolyFrame  0 
+PolyPos   0.0000 -2.0250 -0.0736
+PolyDeg   0.0000 0.0000 90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_駐車場.x
+PolyFrame  0 
+PolyPos   -1.8720 -0.8120 -0.0735
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.9000 1.0390 1.0000
+PolyCenter  1
+PolyEnd
+
+#[10]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    8
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 3.0930 0.4130
+BodyRot       0.00 0.00 0.00
+BodySize      10.0000 1.0000 1.0000
+BodyAlignment PY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.600
+BodyDesignSet 5
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_ビル.x
+PolyFrame  0 
+PolyPos   0.0000 -0.0390 0.0150
+PolyDeg   0.0000 0.0000 -90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_T字_02.x
+PolyFrame  0 
+PolyPos   0.0000 -1.3320 -0.4870
+PolyDeg   0.0000 0.0000 90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_駐車場.x
+PolyFrame  0 
+PolyPos   1.5250 -2.8270 -0.4870
+PolyDeg   0.0000 0.0000 180.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_直線02.x
+PolyFrame  0 
+PolyPos   -3.4750 -2.8270 -0.4870
+PolyDeg   0.0000 0.0000 90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_誘導路.x
+PolyFrame  0 
+PolyPos   -3.4930 -2.8270 -0.4860
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  3.0200 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[11]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    3
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.7250 0.7250 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0500 0.0500 0.1700
+BodyAlignment MZ
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_橋支柱.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[12]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    3
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -0.7250 0.7250 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0500 0.0500 0.1700
+BodyAlignment MZ
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_橋支柱.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[13]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    6
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.7250 -0.7250 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0500 0.0500 0.1700
+BodyAlignment MZ
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_橋支柱.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[14]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    6
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -0.7250 -0.7250 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0500 0.0500 0.1700
+BodyAlignment MZ
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_橋支柱.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[15]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    9
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -3.2670 -1.5840 0.1440
+BodyRot       0.00 0.00 0.00
+BodySize      0.5580 0.0560 0.4730
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 2
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   0.2500 0.0240 0.2220
+PolyDeg   57.0000 90.0000 36.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -0.2500 0.0240 0.2220
+PolyDeg   57.0000 90.0000 36.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[16]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    9
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       4.7462 -0.5205 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.6000 0.6000 0.1000
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 3
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_ゴール台座.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_ゴール柵.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_誘導路.x
+PolyFrame  0 
+PolyPos   -1.5190 -0.0090 -0.0730
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  3.5520 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[17]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    16
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -0.2490 -1.2680 0.0730
+BodyRot       0.00 0.00 0.00
+BodySize      1.0000 1.6190 0.2900
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 14
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_ビル（建設中）.x
+PolyFrame  0 
+PolyPos   -0.0030 -0.0020 0.3540
+PolyDeg   0.0000 0.0000 180.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_鉄筋束.x
+PolyFrame  0 
+PolyPos   0.0000 -0.1710 0.6100
+PolyDeg   -0.0000 0.0000 126.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_鉄筋束.x
+PolyFrame  0 
+PolyPos   0.0000 -0.3630 0.6100
+PolyDeg   0.0000 0.0000 126.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_鉄筋束.x
+PolyFrame  0 
+PolyPos   0.0000 -0.2640 0.7000
+PolyDeg   0.0000 -0.0000 126.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -3.2280 0.1530 0.3000
+PolyDeg   90.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -3.0000 0.1530 0.1500
+PolyDeg   90.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -2.7000 0.1530 0.3000
+PolyDeg   90.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -2.4000 0.1530 0.1500
+PolyDeg   90.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -2.1000 0.1530 0.3000
+PolyDeg   90.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -1.8000 0.1530 0.1500
+PolyDeg   90.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -1.5000 0.1530 0.3000
+PolyDeg   90.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -1.2000 0.1530 0.1500
+PolyDeg   90.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -0.9000 0.1530 0.3000
+PolyDeg   90.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージデザイン_木.x
+PolyFrame  0 
+PolyPos   -0.6000 0.1530 0.1500
+PolyDeg   90.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[18]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    15
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       -0.4560 -1.1850 0.2860
+BodyRot       0.00 0.00 0.00
+BodySize      1.0000 2.4160 1.0000
+BodyAlignment MX
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_マンション.x
+PolyFrame  0 
+PolyPos   2.5010 0.0000 0.0000
+PolyDeg   0.0000 0.0000 90.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[19]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    18
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.7140 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      8.0000 1.0000 1.0000
+BodyAlignment PX
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[20]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    10
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 1.0000 0.0000
+BodyPos       2.0000 -0.8100 -0.4350
+BodyRot       0.00 -0.00 90.00
+BodySize      1.0000 0.2000 0.1000
+BodyAlignment MY
+BodyMass      1.0000
+Space         4
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[21]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    20
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyType      CAPPED_CYLINDER
+BodyLength    0.800
+BodyRadius    0.100
+BodyPos       0.0000 0.0000 -0.4080
+BodyRot       0.00 90.00 0.00
+BodySize      0.2000 0.2000 1.0000
+BodyAlignment PZ
+BodyMass      0.0100
+Space         3
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[22]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    21
+JointPos      0.0000 0.0000 0.0000
+JointAxis     0.0000 0.0000 1.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 90.00 0.00
+BodySize      1.0000 2.0000 0.0150
+BodyAlignment MX
+BodyMass      0.1000
+Space         0
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_シーソー_02.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 -0.0001
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[23]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    10
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       4.0000 -0.7710 -0.3300
+BodyRot       0.00 0.00 0.00
+BodySize      0.3000 0.3000 0.3000
+BodyAlignment MY
+BodyMass      0.0300
+Space         0
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_運搬物.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[24]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    23
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.3000 0.3000 0.3000
+BodyAlignment PY
+BodyMass      0.0300
+Space         0
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_運搬物.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[25]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    23
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.3000 0.3000 0.3000
+BodyAlignment MY
+BodyMass      0.0100
+Space         0
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_運搬物.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[26]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    23
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.1500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.3000 0.3000 0.3000
+BodyAlignment PZ
+BodyMass      0.0300
+Space         0
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.1500 0.1500 0.1500
+PolyCenter  1
+PolyEnd
+
+#[27]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    26
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.1500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.3000 0.3000 0.3000
+BodyAlignment PZ
+BodyMass      0.0300
+Space         0
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.1500 0.1500 0.1500
+PolyCenter  1
+PolyEnd
+
+#[28]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    26
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.3000 0.3000 0.3000
+BodyAlignment MY
+BodyMass      0.0300
+Space         0
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.1500 0.1500 0.1500
+PolyCenter  1
+PolyEnd
+
+#[29]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    20
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.2000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0100 0.2000 0.4000
+BodyAlignment PX
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[30]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    20
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.1200
+BodyRot       0.00 0.00 0.00
+BodySize      0.2000 0.0100 0.1000
+BodyAlignment PY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[31]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    20
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.2000
+BodyRot       0.00 0.00 0.00
+BodySize      0.0100 0.2000 0.4000
+BodyAlignment MX
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  ステージ_シーソー_01.x
+PolyFrame  0 
+PolyPos   0.5040 -0.0000 -0.0240
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  1.0000 1.0000 1.0000
+PolyCenter  1
+PolyEnd
+
+#[32]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_GEOM
+JointType     NONE
+BodyParent    20
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.2000 0.0100 0.1000
+BodyAlignment MY
+BodyMass      0.0100
+Space         1
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+#[33]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+BodyParent    22
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 1.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      1.0000 0.0500 0.0001
+BodyAlignment MZ
+BodyMass      0.1000
+Space         0
+BodyColor     1.000 1.000 1.000 0.000
+BodyDesignSet 0
+PartsEnd
+end
+
+#====================
+begin space
+#s1 s2 mode a1    a2    a3
+0 -1 e 0.500 0.500 0.000
+1 0 e 2.000 0.500 0.000
+2 -2 e 0.500 0.500 0.000
+3 0 e 0.500 0.200 0.000
+4 0 e 0.500 0.200 0.000
+5 0 e 0.500 0.200 0.000
+6 0 e 0.500 0.200 0.000
+7 0 e 0.500 0.200 0.000
+8 0 e 0.500 0.200 0.000
+9 0 e 0.500 0.200 0.000
+10 0 e 0.500 0.200 0.000
+11 0 e 0.500 0.200 0.000
+end
+
+#====================
+begin foot
+-1 -1
+end
+
+#====================
+begin motor
+#axis     Dir LSBpos LSBvel   trq   speed   Kp      Kd      fric  maxOmg  MinAng  MaxAng DeadBand Type
+#         []  [dg]   [deg/s] [kgfcm]  []     []     []    [kgfcm] [deg/s]  [deg]   [deg]  [deg]  []
+_ID1       +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID8       +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID3       +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID4       +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID5       +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID6       +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID7       +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID9       +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID10      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID20      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID31      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID32      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID45      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID46      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID31     +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID33     +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID34     +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+___ID32    +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+___ID33    +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+___ID34    +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID35      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID36      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID37      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID38      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID39      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID40      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID41      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID42     +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID43     +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID44      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID45     +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID46     +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID51      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+end
+
+#====================
+begin fix
+off
+end
+
