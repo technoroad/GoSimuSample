@@ -1,0 +1,79 @@
+#背景色    R    G    B
+BackColor 0.900 0.800 0.600
+
+#初期位置姿勢    OBJ  align x[m]  y[m]  z[m]  rx[deg]  ry[deg]  rz[deg]
+#align=0センター位置指定  align=1最下点(ロボットなら足裏)位置基準
+RobotInitPosRot robo1  1  0.000 -0.600 0.000 0.000 0.000 90.000
+RobotInitPosRot robo2  1 0.000 0.600 0.010 0.000 0.000 -90.000
+RobotInitPosRot ground 0 0.000 0.000 0.000 0.000 0.000 0.000
+
+#HP
+RobotHP robo1 10000
+RobotHP robo2 10000
+
+#重力      [g]
+EnvGravity 1.000000
+
+#カメラ(camera.txtのどのカメラを使用するか)
+CameraSelect CamCenter
+
+#疑似回転減衰      
+RotationFriction 1.000000
+
+#接触     area   e   mu
+Collision main   0.200 0.500
+Collision ground 0.200 0.500
+
+#地面 有効無効
+Ground  enable
+
+#地面表示
+GroundView none
+
+#地面用テクスチャ　ファイル名
+GroundTexture stage.tga
+
+#影の表示の有無
+Shadow Robot0 on
+Shadow Robot1 on
+Shadow Ground off
+
+#GAME制限時間 [s]
+TimeLimit     180.0
+
+#リングアウト判定の有無
+RingOut 0
+
+#対戦回数
+BattleRounds 2
+
+#GOAL AREA
+GoalStart
+Who         Robo0
+Object      Ground
+ObjectBody  1
+AreaCenter  0.000 2.220 0.250
+AreaSieds  0.700 0.150 0.500
+GoalGrpOff box  0.400 0.400 3.300 0.500
+GoalGrpOn  box  2.000 0.500 0.500 0.500
+GoalEnd
+
+GoalStart
+Who         Robo1
+Object      Ground
+ObjectBody  1
+AreaCenter  0.000 -2.220 0.250
+AreaSieds  0.700 0.150 0.500
+GoalGrpOff box  2.400 2.400 1.200 0.500
+GoalGrpOn  box  2.000 0.500 0.500 0.500
+GoalEnd
+
+#FIGURES
+FigBar 147 11 -126 -35 
+FigWaku 453 75 1 -3 
+TextFigDown 100 16 -160 -5 
+TextFigTime 54 24 -1 -28 
+TextFig1 16 40 0 60 
+TextFigCenter 24 60 0 0 
+TextFig2 16 40 0 -65 
+TextFig3 12 30 0 -112 

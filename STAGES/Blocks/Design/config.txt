@@ -1,0 +1,502 @@
+begin version
+version 00 02
+end
+
+#====================
+begin body
+
+#[0]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    -1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0000 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PX
+BodyMass      0.0020
+Space         3
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[1]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PZ
+BodyMass      0.0020
+Space         4
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[2]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    1
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PZ
+BodyMass      0.0020
+Space         5
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[3]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0020 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PY
+BodyMass      0.0020
+Space         10
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[4]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    3
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PZ
+BodyMass      0.0020
+Space         11
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[5]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    4
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PZ
+BodyMass      0.0020
+Space         12
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[6]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    5
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PZ
+BodyMass      0.0020
+Space         13
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[7]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    0
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0020 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment MY
+BodyMass      0.0020
+Space         17
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[8]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    7
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PZ
+BodyMass      0.0020
+Space         18
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[9]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    3
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 0.0020 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PY
+BodyMass      0.0020
+Space         24
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[10]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    9
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PZ
+BodyMass      0.0020
+Space         25
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[11]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    10
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PZ
+BodyMass      0.0020
+Space         26
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[12]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    11
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PZ
+BodyMass      0.0020
+Space         27
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[13]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    12
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0500 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment PZ
+BodyMass      0.0020
+Space         28
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+#[14]-----------------
+PartsStart
+BodyName      
+PhysType      PHYS_ALL
+JointType     NONE
+BodyParent    7
+JointPos      0.0000 0.0000 0.0000
+JointAxis     1.0000 0.0000 0.0000
+BodyPos       0.0000 -0.0020 0.0000
+BodyRot       0.00 0.00 0.00
+BodySize      0.1000 0.1000 0.1000
+BodyAlignment MY
+BodyMass      0.0020
+Space         31
+BodyColor     1.000 1.000 3.100 0.000
+BodyDesignSet 1
+PartsEnd
+
+PolyStart
+PolyType  XFILE
+PolyName  saikoro.x
+PolyFrame  0 
+PolyPos   0.0000 0.0000 0.0000
+PolyDeg   0.0000 0.0000 0.0000
+PolyZoom  0.0500 0.0500 0.0500
+PolyCenter  1
+PolyEnd
+
+end
+
+#====================
+begin space
+#s1 s2 mode a1    a2    a3
+0 -1 e 1.500 0.500 0.000
+1 0 e 1.500 0.500 0.000
+2 -2 e 1.500 0.500 0.000
+3 1 e 0.500 0.200 0.000
+4 1 e 0.500 0.200 0.000
+5 1 e 0.500 0.200 0.000
+6 1 e 0.500 0.200 0.000
+7 1 e 0.500 0.200 0.000
+8 1 e 0.500 0.200 0.000
+9 1 e 0.500 0.200 0.000
+10 1 e 0.500 0.200 0.000
+11 1 e 0.500 0.200 0.000
+12 1 e 0.500 0.200 0.000
+13 1 e 0.500 0.200 0.000
+14 1 e 0.500 0.200 0.000
+15 1 e 0.500 0.200 0.000
+16 1 e 0.500 0.200 0.000
+17 1 e 0.500 0.200 0.000
+18 1 e 0.500 0.200 0.000
+19 1 e 0.500 0.200 0.000
+20 1 e 0.500 0.200 0.000
+21 1 e 0.500 0.200 0.000
+22 1 e 0.500 0.200 0.000
+23 1 e 0.500 0.200 0.000
+24 1 e 0.500 0.200 0.000
+25 1 e 0.500 0.200 0.000
+26 1 e 0.500 0.200 0.000
+27 1 e 0.500 0.200 0.000
+28 1 e 0.500 0.200 0.000
+29 1 e 0.500 0.200 0.000
+30 1 e 0.500 0.200 0.000
+31 1 e 0.500 0.200 0.000
+32 1 e 0.500 0.200 0.000
+33 1 e 0.500 0.200 0.000
+34 1 e 0.500 0.200 0.000
+35 1 e 0.500 0.200 0.000
+36 1 e 0.500 0.200 0.000
+37 1 e 0.500 0.200 0.000
+end
+
+#====================
+begin foot
+-1 -1
+end
+
+#====================
+begin motor
+#axis     Dir LSBpos LSBvel   trq   speed   Kp      Kd      fric  maxOmg  MinAng  MaxAng DeadBand Type
+#         []  [dg]   [deg/s] [kgfcm]  []     []     []    [kgfcm] [deg/s]  [deg]   [deg]  [deg]  []
+_ID1       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID2       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID3       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID4       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID5       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+__ID10     +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID6       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID7       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID9       +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID10      +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID11      +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID24      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID25      +  0.010    1.000 50.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+_ID12      +  1.000    1.000  3.000  3.000 3943.000 88.000  1.000 360.000 -180.000 180.000  0.000 1
+end
+
+#====================
+begin fix
+off
+end
+

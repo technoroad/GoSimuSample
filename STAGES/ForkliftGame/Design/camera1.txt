@@ -1,0 +1,68 @@
+# -------------------------
+begin default_camera
+CAM_DEFAULT CamCenter
+end
+
+# -------------------------
+begin camera_setting
+CAM_NAME  CamCenter
+CAM_FOV   11.000000
+CAM_NEAR   0.600000
+CAM_FAR    50.000000
+CAM_TRANS_DIFF  0.001000
+CAM_ANGLE_DIFF  0.050000
+
+CAM_CENTER_TRANS  -0.138225 -0.185786 0.592000
+CAM_AZEL          -21.450000 14.950000
+CAM_DISTANCE      13.712000
+end 
+
+# -------------------------
+begin camera_setting
+CAM_NAME  CamFree
+CAM_FOV   11.000000
+CAM_NEAR   0.600000
+CAM_FAR    50.000000
+CAM_TRANS_DIFF  0.001000
+CAM_ANGLE_DIFF  0.050000
+
+CAM_TGPOS  0.000000 0.000000 0.000000
+CAM_AZEL          -30.000000 15.000000
+CAM_DISTANCE      3.000000
+end 
+
+# -------------------------
+begin camera_setting
+CAM_NAME  CamRobot
+CAM_FOV   45.000000
+CAM_NEAR   0.600000
+CAM_FAR    50.000000
+CAM_TRANS_DIFF  0.001000
+CAM_ANGLE_DIFF  0.050000
+
+CAM_ROBOT_OFFSET   -2.730000 0.000000 0.000000
+CAM_ROBOT_ROTATION   0
+end 
+
+# -------------------------
+begin camera_setting
+CAM_NAME  CamBattle
+CAM_FOV   11.000000
+CAM_NEAR   0.600000
+CAM_FAR    50.000000
+CAM_TRANS_DIFF  0.001000
+CAM_ANGLE_DIFF  0.050000
+end 
+
+# -------------------------
+begin camera_setting
+CAM_NAME  CamDash
+CAM_FOV   12.000000
+CAM_NEAR   0.600000
+CAM_FAR    50.000000
+CAM_TRANS_DIFF  0.001000
+CAM_ANGLE_DIFF  0.050000
+
+CAM_CENTER_TRANS  0.000000 0.000000 0.000000
+end 
+
